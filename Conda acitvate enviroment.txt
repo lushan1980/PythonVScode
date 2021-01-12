@@ -1,0 +1,3 @@
+Conda activate base
+or
+Conda activate myenv

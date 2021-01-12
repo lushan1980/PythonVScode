@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import time
 
+
 st.write("""
 # Simple Stock Price App
 Shown are the stock closing price and volume of Google!
