@@ -7,3 +7,6 @@ pipreqs /path/to/project
 Sometimes you come across pip freeze, but this saves all packages in the environment including those that you don't use in your current project.
 
 pip freeze > requirements.txt
+
+how to check requirements.txt file:
+cat requirements.txt
