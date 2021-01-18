@@ -6,3 +6,4 @@ yfinance==0.1.55
 numpy==1.19.5
 streamlit==0.74.1
 matplotlib==3.3.3
+mysql-connector-python==8.0.18
