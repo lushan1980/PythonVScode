@@ -2,7 +2,6 @@ import pyodbc
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
-import mysql.connector
 import seaborn as sns
 
 server = 'logecaldatabase.database.windows.net'
