@@ -1,7 +1,5 @@
 You can use the following code to generate a requirements.txt file:
 pip install pipreqs
-
-pip install pipreqs
 pipreqs /path/to/project
 
 
