@@ -2,6 +2,6 @@ seaborn==0.11.1
 yfinance==0.1.55
 numpy==1.19.5
 streamlit==0.74.1
-pyodbc==4.0.27
+pyodbc==4.0.30
 matplotlib==3.3.3
-pandas==1.1.5
+pandas==1.2.0
