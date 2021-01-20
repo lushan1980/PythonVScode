@@ -1,3 +1,2 @@
 unixodbc-dev
-sqlservr-setup
 mssql-tools
