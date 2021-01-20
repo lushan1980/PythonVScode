@@ -4,7 +4,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-server = 'tcp:logecaldatabase.database.windows.net'
+server = 'logecaldatabase.database.windows.net'
 database = 'CoronaVirus'
 username = 'logecal'
 password = 'Lushan2020$'
