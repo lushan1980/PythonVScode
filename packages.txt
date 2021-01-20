@@ -1,2 +1,1 @@
-odbcinst -j
 unixodbc-dev
