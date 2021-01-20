@@ -4,7 +4,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-driver='{ODBC Driver 17 for SQL Server}'
+driver = '{ODBC Driver 17 for SQL Server}'
 server = 'tcp:logecaldatabase.database.windows.net, 1433'
 database = 'CoronaVirus'
 username = 'logecal'
