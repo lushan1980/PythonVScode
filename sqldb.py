@@ -10,7 +10,7 @@ username = 'logecal'
 password = 'Lushan2020$'
 
 
-conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+conn = pyodbc.connect('DRIVER={SQL Server Native Client RDA 11.0};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 
 
 st.title('Surgery Time table and plots')
@@ -43,3 +43,5 @@ st.write("""
 l = sns.pointplot(x="MonthProc", y="SurgeryTime", hue="Randomization", err_style="bars", ci=95, data=df, dodge=0.4, join=True)
 plt.setp(l.get_xticklabels(), rotation=45)
 st.pyplot()
+
+st.write(pyodbc.drivers())
