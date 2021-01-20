@@ -4,14 +4,14 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-server = 'logecaldatabase.database.windows.net'
+server = 'tcp:logecaldatabase.database.windows.net, 1433'
 database = 'CoronaVirus'
 username = 'logecal'
 password = 'Lushan2020$'
 
 
-# conn = pyodbc.connect('DRIVER={SQL Server Native Client 11.0};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-conn = pyodbc.connect('DSN=AzureSQL; UID='+username+';PWD='+ password)
+conn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+# conn = pyodbc.connect('DSN=AzureSQL; UID='+username+';PWD='+ password)
 
 st.title('Surgery Time table and plots')
 
