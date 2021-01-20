@@ -1,2 +1,2 @@
 unixodbc-dev
-odbcinst.ini​
+odbcinst
