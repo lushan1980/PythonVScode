@@ -10,8 +10,8 @@ username = 'logecal'
 password = 'Lushan2020$'
 
 
-conn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-# conn = pyodbc.connect('DSN=AzureSQL; UID='+username+';PWD='+ password)
+conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+# conn = pyodbc.connect('DSN=logecaldatabase/CoronaVirus; UID='+username+';PWD='+ password)
 
 st.title('Surgery Time table and plots')
 
