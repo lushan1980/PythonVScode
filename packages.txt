@@ -1,2 +1,2 @@
 unixodbc-dev
-mssql-tools - sqlcmd
+mssql-tools-sqlcmd
