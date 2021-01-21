@@ -1,17 +1,19 @@
 import pyodbc
+import pymssql
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 driver = '{SQL Server}'
-server = 'tcp:logecaldatabase.database.windows.net, 1433'
+server = 'logecaldatabase.database.windows.net'
 database = 'CoronaVirus'
 username = 'logecal'
 password = 'Lushan2020$'
 
 conn = pyodbc.connect('DRIVER='+driver+';SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-
+# conn = pymssql.connect(server=server, user=username, password=password, database=database, charset="CP936")
 
 st.title('Surgery Time table and plots')
 
@@ -19,13 +21,14 @@ SQL_Query = pd.read_sql_query('''exec [dbo].[SurgeryTime]''', conn)
 
 df = pd.DataFrame(SQL_Query)
 
+
 st.markdown("""
 ### Surgery Time Table
-
 """)
+
 st.write(df)
 # st.table(df)
-conn.close()
+# conn.close()
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.write("""
