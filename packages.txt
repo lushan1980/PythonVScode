@@ -1,2 +1,2 @@
-mssql-tools 
 unixODBC-dev
+mssql-tools
