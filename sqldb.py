@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-driver = '{SQL Server Native Client 11.0}'
+driver = '{ODBC Driver 17 for SQL Server}'
 server = 'logecaldatabase.database.windows.net'
 database = 'CoronaVirus'
 username = 'logecal'
