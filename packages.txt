@@ -1,1 +1,1 @@
-mssql-tools
+mssql-server
