@@ -12,8 +12,8 @@ database = 'CoronaVirus'
 username = 'logecal'
 password = 'Lushan2020$'
 
-# conn = pyodbc.connect('DRIVER='+driver+';SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-conn = pymssql.connect(server='logecaldatabase.database.windows.net', user='logecal@server', password='Lushan2020$', database='CoronaVirus')
+conn = pyodbc.connect('DRIVER='+driver+';SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+# conn = pymssql.connect(server='logecaldatabase.database.windows.net', user='logecal@server', password='Lushan2020$', database='CoronaVirus')
 
 st.title('Surgery Time table and plots')
 
