@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run sqldb.py
+web: sh setup.sh && streamlit run --server.port $PORT sqldb.py
