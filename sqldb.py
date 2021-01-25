@@ -47,4 +47,4 @@ l = sns.pointplot(x="MonthProc", y="SurgeryTime", hue="Randomization", err_style
 plt.setp(l.get_xticklabels(), rotation=45)
 st.pyplot()
 
-st.write(pyodbc.drivers())
+# st.write(pyodbc.drivers())
