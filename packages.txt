@@ -1,4 +1,2 @@
 unixodbc
 unixodbc-dev
-python-pymssql
-python3-pymssql
