@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
+from numpy import random
 
 
 driver = '{ODBC Driver 17 for SQL Server}'
@@ -20,11 +21,13 @@ SQL_Query = pd.read_sql_query('''exec [dbo].[SurgeryTime]''', conn)
 
 df = pd.DataFrame(SQL_Query)
 
+
 Control = random.normal(loc=150, scale=40, size=69)
 Device = random.normal(loc=70, scale=20, size=71)
 
 df.loc[df.Randomization == 'Control', 'SurgeryTime'] = Control
 df.loc[df.Randomization == 'Device', 'SurgeryTime'] = Device
+
 
 st.markdown("""
 ### Surgery Time Table
