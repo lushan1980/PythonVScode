@@ -1,6 +1,4 @@
+unixodbc
 unixodbc-dev
-cl-mssql
-golang-github-denisenkom-go-mssqldb-dev
-libopendbx1-mssql
 python-pymssql
 python3-pymssql
